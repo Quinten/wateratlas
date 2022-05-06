@@ -7,13 +7,14 @@ body {
     text-align: center;
 }
 
-.text-center {
-    text-align: center;
-}
-
 p.paragraph {
+    text-align: left;
     max-width: 540px;
     margin: 0 auto 1.5em;
+}
+
+p.text-center {
+    text-align: center;
 }
 
 ul {
