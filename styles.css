@@ -34,12 +34,11 @@ a:hover, a:active {
 }
 
 .image-wrapper {
-    margin-bottom: .5em;
-    height: calc(100vh - 100px);
+    height: 100vh;
     position: relative;
 }
 
-img {
+.image {
     max-height: 90%;
     max-width: 90%;
     position: absolute;
@@ -48,12 +47,16 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    opacity: 1;
-    transition: opacity 2s cubic-bezier(.17, .67, .83, .67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-img.lazy {
-    opacity: 0;
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(90vh - 100px);
 }
 
 .wrapper {
@@ -62,9 +65,9 @@ img.lazy {
 }
 
 .post {
-    margin-bottom: 64px;
+    margin-bottom: 0;
 }
 
 .posts {
-    margin-top: 64px;
+    margin-bottom: 64px;
 }
